@@ -8,6 +8,11 @@ import CheckoutForm from "./components/CheckoutForm";
 import "./App.css";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleMode = e => {
+    e.preventDefault();
+    setDarkMode(!darkMode);
+  };
   // array of plants that have been added to the cart
   const [cart, setCart] = useState([]);
 
@@ -22,12 +27,11 @@ function App() {
   };
 
   return (
-    <div>
+    <div className={darkMode ? 'light' : 'dark'}>
       <Router>
         <nav className="container">
 
           <h1>
-            
             React Plants <span role="img">🌿</span>
           </h1>
           <ul className="steps">
@@ -44,7 +48,21 @@ function App() {
                 </span>
               </NavLink>
             </li>
+            <li>
+             
+              <p onClick={toggleMode}
+                className={darkMode ? 'showEl' : 'hideEl'}
+              >
+                Light
+              </p>
+              <p onClick={toggleMode}
+                className={darkMode ? 'hideEl' : 'showEl'}
+              >
+                Dark
+              </p>
+            </li>
           </ul>
+          
         </nav>
         <Route
           exact

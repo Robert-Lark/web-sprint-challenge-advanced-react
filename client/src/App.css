@@ -16,7 +16,7 @@ body {
 
 h1 {
   font-weight: 100;
-  color: white;
+  color: red;
   text-align: center;
   font-size: 2rem;
 }
@@ -56,7 +56,7 @@ h1 {
 
 .plant-details {
   padding: 0 32px 0 16px;
-  color: #fff;
+  color: red;
   font-weight: 200;
   display: flex;
   flex-flow: column nowrap;
@@ -94,6 +94,7 @@ p {
 .cart {
   width: 800px;
   margin: 0 auto;
+
 }
 
 .cart > .plant-card {
@@ -111,7 +112,7 @@ p {
 }
 
 .checkout-section {
-  color: #fff;
+  color: red;
   padding: 32px 0;
   display: flex;
   flex-flow: column nowrap;
@@ -137,7 +138,7 @@ input {
   box-sizing: border-box;
   width: 100%;
   border-radius: 4px;
-  border: 1px solid white;
+  border: 1px solid gold;
   padding: 10px 15px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -149,7 +150,7 @@ label {
   display: block;
   margin-bottom: 13px;
   margin-top: 20px;
-  color: white;
+  color: gold;
   font-size: 14px;
   font-weight: 200;
 }
@@ -203,7 +204,7 @@ hr {
 }
 
 h2 {
-  color: white;
+  color: gold;
   font-weight: 200;
 }
 
@@ -217,12 +218,12 @@ button {
 }
 
 pre {
-  color: white;
+  color: blue;
   white-space: pre;
 }
 
 .steps {
-  color: white;
+  color: gold;
   display: flex;
   list-style: none;
   margin: 0;
@@ -250,4 +251,21 @@ pre {
 .active {
   color: #0e101c;
   border-bottom: 2px solid !important;
+}
+.hideEl {
+  display: none;
+}
+.showEl {
+  display: auto;
+  cursor: pointer;
+ color: #0e101c;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 2;
+}
+.light {
+background-color: whitesmoke;
+}
+.dark {
+
 }

@@ -51,6 +51,6 @@ I would enter npm run test.
 I would then import { render, screen } from "@testing-library/react";
 & any component I needed to to run the tests. 
 I would then consult the rtl cheatsheet to find out exactly what is the best 
-syntactical method for running the particular test I was interested in, employing the act arrange assert methodology.
+syntactical method for running the particular test I was interested in, employing the arrange, act, assert methodology.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.

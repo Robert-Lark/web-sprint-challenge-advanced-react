@@ -5,6 +5,10 @@ import App from "../App"
 
 // Write up the two tests here and make sure they are testing what the title shows
 
+test('renders the app component without errors', () => {
+    render(<App />)
+})
+
 test("form header renders", () => {
     render(<App />)
 
@@ -12,4 +16,9 @@ test("form header renders", () => {
 
 });
 
-test("form shows success message on submit with form details", () => {});
+test("form shows success message on submit with form details", () => {
+render(<CheckoutForm/>)
+
+    const submitButton = screen.getByText(/checkout/i)
+    fireEvent.click(submitButton)
+});

@@ -1,0 +1,56 @@
+Interview Questions
+Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
+
+Explain how to build stateful class components.
+
+Any class component that uses state needs to have the following code: 
+constructor() {
+super();
+}
+so the full skeleton looks like this:
+
+class example extends React.Component {
+	constructor() {
+		super();
+		this.state = {};
+	}
+	render() {
+		return (
+        )
+}
+
+export default (example);
+
+
+Describe the different phases of the component lifecycle.
+
+componentDidMount, componentDidUpdate and componentWillUnmount
+///////BIRTH\\\\\\ ////////GROWTH\\\\\\\  ////////DEATH|||||||||
+These can be thought of as the stages that occur when a component is rendered. 
+
+Less common lifecycle methods are: 
+getDerivedStateFromProps
+shouldComponentUpdate
+getSnapshotBeforeUpdate
+
+Demonstrate an understanding of class component lifecycle methods.
+
+I would use component did mount to make my initial axios call 
+component did update would be used to make subsequent axios calls that relied on something happening with the code after it mounted. 
+
+Component will unmount could be thought of as a clean-up removing things like eventListeners etc
+
+Define stateful logic.
+
+logic that could have to do with state is useState clickHandlers input fields etc.
+
+Describe how to test a React component with React Testing Library.
+
+Testing with the react lesting library involves installing packages to allow the library to run. 
+I would enter npm run test.
+I would then import { render, screen } from "@testing-library/react";
+& any component I needed to to run the tests. 
+I would then consult the rtl cheatsheet to find out exactly what is the best 
+syntactical method for running the particular test I was interested in, employing the arrange, act, assert methodology.
+
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
